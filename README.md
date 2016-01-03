@@ -29,13 +29,13 @@ docker run \
 ```
 docker run --rm \ 
  --volumes-from upsource-data \
-  -p 8080:8080 --name upsource lynnchin/docker-upsource
+  -p 8080:8080 --name upsource lynnc/docker-upsource:latest
 ```
 # Production Mode #
 ```
 docker run -d --rm \ 
  --volumes-from upsource-data \
-  -p 8080:8080 --name upsource lynnchin/docker-upsource
+  -p 8080:8080 --name upsource lynnc/docker-upsource:latest
 ````
 
 Open up URL: http://localhost:8080/ to start Upsource configuration
